@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <section id="blogs">
+                <article class="blog">
+                        <h3>Our New Awesome Article 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vero? Modi, repellat non natus eos maiores rem architecto repudiandae quasi cumque voluptatem incidunt possimus necessitatibus? Vitae reprehenderit rem quae provident id, voluptates esse iure! Laudantium ipsum eaque rerum fuga molestiae!</p>
+                </article>
+                <article class="blog">
+                        <h3>Our New Awesome Article 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vero? Modi, repellat non natus eos maiores rem architecto repudiandae quasi cumque voluptatem incidunt possimus necessitatibus? Vitae reprehenderit rem quae provident id, voluptates esse iure! Laudantium ipsum eaque rerum fuga molestiae!</p>
+                </article>
+                <article class="blog">
+                        <h3 id="second-title">Our New Awesome Article 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vero? Modi, repellat non natus eos maiores rem architecto repudiandae quasi cumque voluptatem incidunt possimus necessitatibus? Vitae reprehenderit rem quae provident id, voluptates esse iure! Laudantium ipsum eaque rerum fuga molestiae!</p>
+                </article>
+                <article class="blog">
+                        <h3 class="last-title">Our New Awesome Article 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vero? Modi, repellat non natus eos maiores rem architecto repudiandae quasi cumque voluptatem incidunt possimus necessitatibus? Vitae reprehenderit rem quae provident id, voluptates esse iure! Laudantium ipsum eaque rerum fuga molestiae!</p>
+                </article>
+        </section>
+
+        <script>
+
+                // const title = document.getElementsByTagName('h3');
+                // for(const h3 of title){
+                        // console.log(h3.innertext);
+                // }
+
+                // const paragraph = document.getElementsByTagName('p');
+                // console.log(paragraph);
+                // for(const p of paragraph){
+                        // console.log(p.innertext);
+                // }
+
+                const blogs = document.getElementsByClassName("blog");
+                for(const blog of blogs){
+                        // console.log(blog);
+                        blog.style.border = "2px solid red";
+                        blog.style.margin = "40px";
+                        blog.style.padding = "40px";
+                        blog.style.fontSize = "30px";
+                        blog.style.borderRadius = "20px";
+                }
+              
+
+                const firstTitle = document.querySelector('h3');
+                // console.log(firstTitle)
+                firstTitle.style.backgroundColor = "brown";
+
+                const description = document.querySelectorAll('p');
+                // console.log(description);
+                for(const blogDetails of description){
+                        blogDetails.style.backgroundColor = "black";
+                        blogDetails.style.color = "white";
+
+                }
+
+              
+
+                const li = document.createElement('li');
+                li.innertext = "Nav Item CReated By JS"
+                // console.log(li)
+                const ul = document.querySelector('ul');
+                // console.log(ul);
+                ul.appendChild(li)
+
+                const article = document.createElement('article');
+                // console.log(article);
+                article.classlist.add('blog')
+                const h3Title = document.createElement('h3')
+                // console.log(h3Title);
+                h3Title.innerText = "Our New Awesome Article 5";
+
+                const pDescription = document.createElement('p');
+                // console.log(pDescription);
+                pDescription.innerHTML = '<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, vero? Modi, repellat non natus eos maiores rem architecto repudiandae quasi cumque voluptatem incidunt possimus necessitatibus? Vitae reprehenderit rem quae provident id, voluptates esse iure! Laudantium ipsum eaque rerum fuga molestiae!</span>'
+                // console.log(pDescription);
+                // console.log(article);
+                article.appendChild(h3Title)
+                article.appendChild(pDescription)
+                // console.log(article);
+                const section = document.querySelector('section');
+                section.appendChild(article)
+
+               
+
+               
+
+               
+
+               
+
+
+        </script>
+</body>
+</html>
